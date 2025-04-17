@@ -1,0 +1,59 @@
+{
+  "name": "bst_project",
+  "version": "1.0.0",
+  "description": "This project is a visualization tool for a Binary Search Tree (BST) implemented in JavaScript. It allows users to insert, remove, and search for nodes, as well as traverse the tree in various ways.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --dist=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoritondale"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/nicoritondale"
+  },
+  "homepage": "git+https://github.com/nicoritondale",
+  "browserslist": [
+    "ie 11"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-jest": "^27.0.2",
+    "babel-loader": "^8.3.0",
+    "concurrently": "^6.2.0",
+    "copy-webpack-plugin": "^9.1.0",
+    "css-loader": "^5.2.7",
+    "gh-pages": "^3.2.3",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^27.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.36.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.1",
+    "regenerator-runtime": "^0.14.1"
+  }
+}

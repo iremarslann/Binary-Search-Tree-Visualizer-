@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binary Search Tree</title>
+  
+<script defer src="bundle.js"></script></head>
+<body>
+  <main>
+    <div class="container">
+      <section>
+        <div class="buttons-container bst-actions-container">
+          <!-- Buttons will be injected here by your JavaScript -->
+        </div>
+      </section>
+      <section>
+        <div class="app-container">
+          <div class="tree">
+            <div class="node node--root"></div>
+            <!-- The Binary Search Tree will be rendered here by your JavaScript -->
+          </div>
+        </div>
+      </section>
+      <!-- Saved Trees Sidebar -->
+      <aside class="saved-trees-sidebar">
+        <h2 class="saved-trees-title">Saved Trees</h2>
+        <button id="delete-all-trees" class="btn btn-danger">Delete All Trees</button>
+        <button id="retrieveBtn" class="btn btn-info">Retrieve Trees</button>
+        <div id="savedTreesList" class="saved-trees-list">
+          <!-- JavaScript will populate this list -->
+        </div>
+      </aside>
+      
+      <!-- Back button -->
+      <a href="javascript:history.back()" class="back-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path fill="none" d="M0 0h24v24H0z" />
+          <path
+            d="M18 11H7.414l3.293-3.293a1 1 0 1 0-1.414-1.414l-5 5a1 1 0 0 0 0 1.414l5 5a1 1 0 0 0 1.414-1.414L7.414 13H18a1 1 0 0 0 0-2z"
+          />
+        </svg>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
+
